@@ -31,8 +31,8 @@
 
 #define h_sens 0
 #define heating 16
-const char* ssid = "Maroc";
-const char* password = "marocmarocko";
+const char* ssid = "*******";
+const char* password = "************";
 float tempTarget = 37.85;
 int currPWM = 0;
 
@@ -120,7 +120,7 @@ void loop() {
   
   if(WiFi.status()== WL_CONNECTED){   //Check WiFi connection status
     HTTPClient http;    //Declare object of class HTTPClient
-    http.begin("http://94.23.71.222/ale-arduino/upload.php?temp=" + String(c));      //Specify request destination
+    http.begin("http://++.++.++.++/ale-arduino/upload.php?temp=" + String(c));      //Specify request destination
     http.addHeader("Content-Type", "text/plain");  //Specify content-type header
     int httpCode = http.POST("Message from ESP8266");   //Send the request
     String payload = http.getString();                  //Get the response payload
