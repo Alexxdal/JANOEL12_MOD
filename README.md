@@ -1,7 +1,7 @@
 # JANOEL12_MOD
 I used components from janoel but with a better temperature sensor now with humidity sensor dh11 all controlled by esp8266 board
 
-Part list:
+<h3>Part list:</h3>
 
 -Janoel12 incubatos as base<br>
 -ESP8266<br>
